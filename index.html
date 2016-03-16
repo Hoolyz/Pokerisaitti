@@ -3,7 +3,7 @@
 
 <script src="js/angular.min.js"></script>
 <script src="js/poker.js"></script>
-
+<script src="js/angular.audio.js"></script>
 
 <head>
   <title>Vaasa Big Blind</title>
@@ -49,9 +49,9 @@ Small Blinds
 <br>
 
 <div style="clear:both;padding-left:35%">
-<button type="button" ng-click="Klikkaus();">Nosta panoksia</button>
+<button type="button" ng-audio="sounds/raise.mp3" volume="0.5" ng-click="Klikkaus();">Nosta panoksia</button>
 
-<button type="button" style="height:50px;width:100px;font-size:50%" ng-click="missKlikkaus();">Missclick</button>
+<button type="button" ng-audio="sounds/oho.mp3" volume="0.5"  style="height:50px;width:100px;font-size:50%" ng-click="missKlikkaus();">Missclick</button>
 </div>
 </div>
 

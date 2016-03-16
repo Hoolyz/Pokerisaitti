@@ -1,8 +1,14 @@
   var i = 0;
-var app = angular.module('BBapp', []);
+var app = angular.module('BBapp', ['ngAudio']);
 
-app.controller('BBController', function($scope,$http){
+app.controller('BBController', function($scope,$http,ngAudio){
 
+
+ $scope.oho = ngAudio.load("../sounds/oho.mp3"); // talvi ääni - Tuuli
+  $scope.raise = ngAudio.load("../sounds/raise.mp3"); // kesä ääni - Pina Colada
+
+  
+  
 $scope.bigblind = 4;
 $scope.smallblind = 2;
 
